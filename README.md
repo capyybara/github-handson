@@ -1,24 +1,25 @@
 # github-handson
 #github-handson
 
-public class Cat {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Cat2 {
     public static void main(String[] args) {
+        List<String> cats = List.of("Tama", "Hachi", "Goro", "Nana");
+        List<String> dogs = new ArrayList<>();;
+        dogs.add("Pochi");
+        dogs.add("Shiro");
+        dogs.add("Kuro");
 
-        String catname[] = {"Tama", "Hachi", "Goro", "Nana"};
-        int catage[] = {2, 13, 7, 4};
+        // catsの名前を出力
+        for (String cat : cats) {
+            System.out.println(cat);
+        }
 
-
-        for (int i = 0; i <= 3; i++)
-            if(catage[i] % 2 ==0){
-                System.out.println(catname[i] + "は" + catage[i] + "歳です");
-            }else if (catage[i] >=10){
-                System.out.println(catname[i] + "は"  + catage[i] + "歳で長生きです");
-            }else{
-                System.out.println(catname[i] + "　ニャー");
-            }
-
-
-
+        // dogの名前を出力
+        for (String dog : dogs) {
+            System.out.println(dog);
         }
     }
-
+}
