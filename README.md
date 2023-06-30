@@ -2,23 +2,48 @@
 #github-handson
 
 
+
 import java.util.List;
 
-public class Cat2 {
+public class Cat {
+
     public static void main(String[] args) {
 
+        List<String> cats = List.of("Tama", "Hachi", "Goro", "Nana", "Koo");
 
-        List<String> cats = List.of("Tama", "Hachi", "Goro", "Nana");
-        //cats と catage の要素数？を連携させたい
-        List<Integer> catage = List.of(2, 13, 7, 4);
+        List<Integer> catage = List.of(2, 13, 7, 4, 5);
 
-        
 
-        // catsの名前を出力
-        for (String cat : cats) {
-            System.out.println(cat + catage);
+
+    
+        for (int i=0; i <5; i++){
+            if(catage.get(i) %2 ==0){
+                System.out.println(cats.get(i) + "は" + catage.get(i) + "歳です");
+            }else if(catage.get(i) >10){
+                System.out.println(cats.get(i) + "は" + catage.get(i) + "歳で長生きです");
+            }else{
+                System.out.println(cats.get(i) + "　ニャー");
+            }
+
+
         }
 
 
+
+
+
+
     }
+
+
+
+
+
+
+
+
+
+
 }
+
+
