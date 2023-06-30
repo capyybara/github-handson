@@ -3,11 +3,10 @@
 
 
 
-import java.util.List;
+    import java.util.List;
 
-public class Cat {
-
-    public static void main(String[] args) {
+    public class Cat {
+        public static void main(String[] args) {
 
         List<String> cats = List.of("Tama", "Hachi", "Goro", "Nana", "Koo");
 
