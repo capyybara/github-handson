@@ -1,9 +1,8 @@
 # github-handson
-#github-handson
 
+```
 public class Cat {
-    public static void main(String[] args) {
-
+     public static void main(String[] args) {
         String catname[] = {"Tama", "Hachi", "Goro", "Nana"};
         int catage[] = {2, 13, 7, 4};
 
@@ -21,4 +20,5 @@ public class Cat {
 
         }
     }
+```
 
